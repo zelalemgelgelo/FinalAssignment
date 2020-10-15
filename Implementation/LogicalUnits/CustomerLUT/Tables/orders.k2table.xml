@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>orders</Name>
+  <ID>tbl_orders</ID>
+  <Columns>
+    <Column name="contract_id" id="tblCol_4dff28eda0e54d58ae409124a26d6ce4" index="0" datatype="Integer" />
+    <Column name="order_id" id="tblCol_5ad7f7905fdb4a89ad3adec188279c8f" index="1" datatype="Integer" mandatory="true" />
+    <Column name="order_type" id="tblCol_7629a6bc46544b0da6377128b8b4e4ab" index="2" datatype="Text" />
+    <Column name="order_date" id="tblCol_420ea63c39954c05a1a8c3a787e5a9a6" index="3" datatype="Text" />
+    <Column name="order_status" id="tblCol_8384afaac8174c2cbe49ff311579659e" index="4" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+  <LazyDataUpdate syncMethod="Inherited" performEvery="1.00:00:00">
+    <TruncateBeforeSync>true</TruncateBeforeSync>
+  </LazyDataUpdate>
+</TableObject>

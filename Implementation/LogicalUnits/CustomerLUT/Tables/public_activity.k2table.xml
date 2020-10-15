@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>public_activity</Name>
+  <ID>tbl_public_activity</ID>
+  <Columns>
+    <Column name="customer_id" id="tblCol_ae9293c9093a4fb4bee6304f4e86a69b" index="0" datatype="Integer" mandatory="true" />
+    <Column name="activity_id" id="tblCol_7a29859aa3a844b580fe089d8b47e7d0" index="1" datatype="Integer" mandatory="true" />
+    <Column name="activity_date" id="tblCol_88d8d61b606e49ba93022bd3ac3ab2f4" index="2" datatype="Text" />
+    <Column name="activity_note" id="tblCol_0c1f3eefd9d2469db27d3956de4841ae" index="3" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+  <LazyDataUpdate syncMethod="Inherited" performEvery="1.00:00:00">
+    <TruncateBeforeSync>true</TruncateBeforeSync>
+  </LazyDataUpdate>
+</TableObject>
