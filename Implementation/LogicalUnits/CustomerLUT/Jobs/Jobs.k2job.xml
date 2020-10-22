@@ -4,7 +4,7 @@
   <Jobs>
     <Job methodName="fabricStorageFunction" jobName="fabricStorageFunction" active="true">
       <ScheduleType>Cron</ScheduleType>
-      <ExecuteEvery>00 00 00 * * ?</ExecuteEvery>
+      <ExecuteEvery>0 0 0 ? * * *</ExecuteEvery>
       <InputParams />
     </Job>
   </Jobs>

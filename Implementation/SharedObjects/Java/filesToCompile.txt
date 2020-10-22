@@ -1,0 +1,6 @@
+"C:/Users/ZelalemZergawGelgelo/Documents/K2View Fabric Studio/FinalAssignment/Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/DebuggingClass.java"
+"C:/Users/ZelalemZergawGelgelo/Documents/K2View Fabric Studio/FinalAssignment/Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/JavaMailSender.java"
+"C:/Users/ZelalemZergawGelgelo/Documents/K2View Fabric Studio/FinalAssignment/Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/SharedGlobals.java"
+"C:/Users/ZelalemZergawGelgelo/Documents/K2View Fabric Studio/FinalAssignment/Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/SharedLogic.java"
+"C:/Users/ZelalemZergawGelgelo/Documents/K2View Fabric Studio/FinalAssignment/Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/batchExecution/BatchExecution.java"
+"C:/Users/ZelalemZergawGelgelo/Documents/K2View Fabric Studio/FinalAssignment/Implementation/SharedObjects/Java/src/com/k2view/cdbms/usercode/common/JobFunction/BatchExecution.java"

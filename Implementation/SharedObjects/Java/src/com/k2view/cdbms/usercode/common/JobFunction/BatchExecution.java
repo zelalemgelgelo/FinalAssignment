@@ -20,18 +20,16 @@ public class BatchExecution {
 
     /**
      * add statement method/ function
-     * @param params
+     * @param statement
      * @throws IllegalArgumentException
-     * @throws InvalidTypeException
      * @throws NullPointerException
      */
-    public void addStatement(List<Statement> params) throws IllegalArgumentException, InvalidTypeException, NullPointerException {
+    public void addStatement(List<SimpleStatement> statement) throws IllegalArgumentException, NullPointerException {
      //add each input statements in our bach statement
-      for(int i=0;i<params.size();i++ ){
-          bs.add(params.get(i));
+      for(int i=0;i<statement.size();i++ ){
+          bs.add(statement.get(i));
       }
     }
-
     /**
      * execution method/ function
      * @throws NoHostAvailableException

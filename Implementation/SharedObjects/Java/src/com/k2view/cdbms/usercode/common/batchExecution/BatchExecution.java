@@ -25,7 +25,7 @@ public class BatchExecution {
      * @throws InvalidTypeException
      * @throws NullPointerException
      */
-    public void addStatement(List<Statement> params) throws IllegalArgumentException, InvalidTypeException, NullPointerException {
+    public void addStatement(List<SimpleStatement> params) throws IllegalArgumentException, InvalidTypeException, NullPointerException {
      //add each input statements in our bach statement
       for(int i=0;i<params.size();i++ ){
           bs.add(params.get(i));

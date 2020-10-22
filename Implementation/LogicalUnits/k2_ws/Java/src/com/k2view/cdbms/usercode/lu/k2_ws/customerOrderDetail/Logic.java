@@ -28,10 +28,9 @@ import static com.k2view.cdbms.usercode.common.SharedGlobals.*;
 @SuppressWarnings({"unused", "DefaultAnnotationParam"})
 public class Logic extends WebServiceUserCode {
 
-
 	@desc("return the customer orderdetail")
 	@webService(path = "customer/OrderInfo", verb = {MethodType.GET, MethodType.POST, MethodType.PUT, MethodType.DELETE}, version = "1", isRaw = false, produce = {Produce.XML, Produce.JSON})
-	public static Object wsCustomerOrder(String customer_id) throws Exception {
+	public static String wsCustomerOrder(String customer_id) throws Exception {
 		/**
 		 * creating a ws service for select all customer's order and fetching the customer order
 		 */
@@ -44,10 +43,12 @@ public class Logic extends WebServiceUserCode {
 			 * If a file already exists for a specific IID, a new file should be generated with the relevant
 			 sequence number.
 			 */
-			//			System.getProperty("user.dir");
+		//			String folderDir= System.getProperty("user.dir");
+		//			System.out.println(folderDir);
 			int SequenceNumberCounter = 1;
 			String filePath = "C:\\Users\\ZelalemZergawGelgelo\\Documents\\K2View Fabric Studio\\FinalAssignment\\JsonFile\\JSONFile";
-			String fileDir = filePath  + customer_id + SequenceNumberCounter + ".txt";
+			String fileDir = filePath  + customer_id+"__" + SequenceNumberCounter + ".txt";
+		
 			//save it in the file
 			File createFile = new File(fileDir);
 			while (createFile.exists()) {
@@ -63,10 +64,9 @@ public class Logic extends WebServiceUserCode {
 			try {
 				FileWriter writer = new FileWriter(createFile);
 				writer.write(jsonWriter.toString());
-		//				writer.flush();
 				writer.close();
 			} catch (IOException e) {
-				e.printStackTrace();
+				e.getMessage();
 			}
 			log.info("File recorded");
 			return "File is successfully uploaded";
@@ -75,8 +75,4 @@ public class Logic extends WebServiceUserCode {
 		}
 	}
 
-	
-	
-
-	
 }
